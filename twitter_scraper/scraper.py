@@ -60,15 +60,19 @@ def crawl_all(line_score_file, team_names_file, regular_season_only=True):
         for future in future_dict:
             output_filename = future_dict[future]
             try:
-                output_filepath = future.result(timeout=1800)
+                output_filepath = future.result(timeout=300)
                 if output_filepath:
                     output_path_obj = pathlib.Path(output_filepath)
                     output_path_obj.rename(pathlib.Path(output_path_obj.parent, f"Finished_{output_path_obj.stem}{output_path_obj.suffix}"))
+            except concurrent.futures.TimeoutError as _:
+                if output_filepath:
+                    output_path_obj = pathlib.Path(output_filepath)
+                    output_path_obj.rename(pathlib.Path(output_path_obj.parent, f"Finished_{output_path_obj.stem}{output_path_obj.suffix}")) 
             except Exception as e:
                 print(f"Error while crawling for {output_filename}: {e}")
             else:
                 print(f"Finished crawling {output_filename}")
     
 if __name__ == "__main__":
-    crawl_all("gamestats/raw/match_linescore_in_2021.json", "gamestats/all_teams.json")
+    crawl_all("gamestats/linscore/raw/match_linescore_in_2021.json", "gamestats/all_teams.json")
     #get_tweets_by_keywords(['"Vegas Golden Knights"', '"Golden Knights"', '"Seattle Kraken"', '"Kraken"'], datetime(2021, 11, 2), datetime(2021, 11, 5))

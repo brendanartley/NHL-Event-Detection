@@ -12,7 +12,7 @@ This project is limited to detecting two major buckets of events - goals and not
 
 ### Presentation
 
-My groupmates and I pit together a video explaining the project in some more detail.
+My groupmates and I put together a video explaining the project in some more detail.
 
 - [Event Detection Presentation (Youtube)](https://www.youtube.com/watch?v=AGMcEMRGVVA)
 
@@ -48,7 +48,7 @@ Twitter was slightly different than the Reddit data. We had to acquire game twee
 
 ### NHL API Data
 
-The NHL API was extremely comprehensive and provided much more information than we expected. Given the complexity of this data, there are many really interesting projects that can branch from this source.
+The NHL API was extremely comprehensive and provided much more information than we expected. Given the complexity of this data, many really interesting projects can branch from this source.
 
 In our case, we only needed the start time and end time of games, and the time at which goals occurred in the match. Here is a sample of some data that is returned from a goal event in JSON format. Note that the event code is a unique identifier which is the gateway to even more information on this event.
 

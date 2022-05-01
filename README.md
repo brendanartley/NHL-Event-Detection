@@ -14,6 +14,8 @@ This project is limited to detecting two major buckets of events - goals and not
 
 My groupmates and I put together a video explaining the project in some more detail.
 
+[@grovershreyf9t](https://github.com/grovershreyf9t), [@bofei-jing](https://github.com/bofei-jing), @AndrewHan
+
 - [Event Detection Presentation (Youtube)](https://www.youtube.com/watch?v=AGMcEMRGVVA)
 
 ### Data Collection + ETL

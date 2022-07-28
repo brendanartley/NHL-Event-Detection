@@ -2,7 +2,7 @@
 
 [@brendanartley](https://github.com/brendanartley), [@grovershreyf9t](https://github.com/grovershreyf9t), [@bofei-jing](https://github.com/bofei-jing), [@AndrewHan](https://github.com/beinfluential88)
 
-In this project, we implement a POC that uses social media activity to predict goals during NHL (National Hockey League) games. This project shows how social media can be used to detect significant events. The proposed architecture can be modified to detect natural disasters, traffic incidents, large gatherings, and much more.
+In this project, we implement a POC that uses social media activity to predict goals during NHL (National Hockey League) games. This project shows how fans activity on social media can be used to detect events in games in real time. The proposed architecture can be modified to detect natural disasters, traffic incidents, large gatherings, and much more.
 
 The main components of this project were to:
 - identify relevant tweets and comments from social media
